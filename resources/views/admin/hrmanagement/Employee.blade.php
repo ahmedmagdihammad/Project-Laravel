@@ -2,7 +2,7 @@
 @section('content')
 <section class="content-header">
   <h1>
-  Latest Department
+  Latest Employee
 
   </h1>
   <ol class="breadcrumb">
