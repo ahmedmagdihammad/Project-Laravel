@@ -4,7 +4,7 @@
 
 <div class="login-box">
   <div class="login-logo">
-    <a href="#"><b>Fast</b>Kood</a>
+    <a href="#"><b>The Company's</b> name</a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
