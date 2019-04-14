@@ -3,7 +3,7 @@
 @section('content')
 <div class="register-box">
   <div class="register-logo">
-    <a href="../../index2.html"><b>The Company's</b> name</a>
+    <a href="#"><b>The Company's</b> name</a>
   </div>
 
   <div class="register-box-body">
