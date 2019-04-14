@@ -5,11 +5,9 @@ namespace App\Http\Controllers\Api;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-use App\Student;
-use App\Payment;
-use DB;
+use App\Employe;
 
-class StudentController extends Controller
+class HrmanagementController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,12 +16,9 @@ class StudentController extends Controller
      */
     public function index()
     {
-        $value = DB::table('students')
-            ->join('payments', 'students.id','=','payments.id')
-            ->select('students.*','payments.offer','payments.amount')
-            ->get();
+        $employe = Employe::all();
 
-        return response()->json($value);
+        return response()->json($employe);
     }
 
     /**
@@ -44,10 +39,7 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
-        $student = Student::create($request->all());
-        $payment = Payment::create($request->all());
-
-        return response()->json([$student, $payment], 201);
+        //
     }
 
     /**
@@ -56,14 +48,9 @@ class StudentController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($student)
+    public function show($id)
     {
-        $student = DB::table('students')
-            ->join('payments', 'students.id','=','payments.id')
-            ->select('students.id','students.fullname','payments.offer','payments.amount')
-            ->get();
-
-        return $student;
+        //
     }
 
     /**
@@ -84,11 +71,9 @@ class StudentController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request,Student $student)
+    public function update(Request $request, $id)
     {
-        $student->update($request->all());
-
-        return respons()->json($student, 200);
+        //
     }
 
     /**
@@ -97,10 +82,8 @@ class StudentController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Student $student)
+    public function destroy($id)
     {
-        $student->delete();
-
-        return response()->json(null, 204);
+        //
     }
 }

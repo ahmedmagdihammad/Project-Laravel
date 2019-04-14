@@ -225,8 +225,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
     </nav>
   </header>
   <!-- Left side column. contains the logo and sidebar -->
-
-
     <aside class="main-sidebar">
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
