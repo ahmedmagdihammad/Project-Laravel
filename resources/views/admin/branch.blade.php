@@ -145,7 +145,7 @@
               <!-- /.box-body -->
               <div class="box-footer">
                 <button type="button" class="btn btn-danger pull-right" data-dismiss="modal">Cancel</button>
-                <button class="btn btn-success pull-right" id="editSave"><i class="fa fa-save"></i> Save</button>
+                <button class="btn btn-success pull-right" id="editSave"><i class="fa fa-save"></i> Update</button>
               </div>
               <!-- /.box-footer -->
           </div>
@@ -228,7 +228,7 @@
               "<td><a href='#'' id='tbfullname'> " + data.name + "</a></td>"+
               "<td id='tbemail'> " + data.mobile + "</td>"+
               "<td id='tbmobile'> " + data.address + "</td>"+
-              "<td><a href='#'' class='edit-modal btn btn-sm btn-warning btn-flat center' data-id='" + data.id +"' data-name='" + data.name + "' data-mobile='" + data.mobile + "' data-address='" + data.address + "'><i class='fa fa-edit'></i>Edit</a>"+
+              "<td><a href='#'' class='edit-modal btn btn-sm btn-warning btn-flat center' data-id='" + data.id +"' data-name='" + data.name + "' data-mobile='" + data.mobile + "' data-address='" + data.address + "'><i class='fa fa-edit'></i>Edit</a>&nbsp"+
                 "<a href='#' class='delete-modal btn btn-sm btn-danger btn-flat center' data-id='" + data.id + "' data-name='" + data.name + "' data-mobile='" + data.mobile +"' data-address='" + data.address + "'><i class='fa fa-times'></i> Delete</a>"+
               "</td>"+
             "</tr>"
@@ -269,7 +269,7 @@
              "<td><a href='#' id='tbfullname'>" + data.name + "</a></td>"+
               "<td id='tbemail'>" + data.mobile + "</td>"+
               "<td id='tbmobile'>" + data.address + "</td>"+
-              "<td><a href='#' class='edit-modal btn btn-sm btn-warning btn-flat center' data-id='" + data.id + "' data-name='" + data.name + "' data-mobile='" + data.mobile + "' data-address='" + data.address + "'><i class='fa fa-edit'></i> Edit</a>"+
+              "<td><a href='#' class='edit-modal btn btn-sm btn-warning btn-flat center' data-id='" + data.id + "' data-name='" + data.name + "' data-mobile='" + data.mobile + "' data-address='" + data.address + "'><i class='fa fa-edit'></i> Edit</a>&nbsp"+
                 "<a href='#' class='delete-modal btn btn-sm btn-danger btn-flat center' data-id='" + data.id + "' data-name='" + data.name + "' data-mobile='" + data.mobile + "' data-address='" + data.address + "'><i class='fa fa-times'></i> Delete</a>"+
               "</td>"+
             "</tr>"

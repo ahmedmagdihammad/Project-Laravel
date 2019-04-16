@@ -146,7 +146,7 @@
               <!-- /.box-body -->
               <div class="box-footer">
                 <button type="button" class="btn btn-danger pull-right" data-dismiss="modal">Cancel</button>
-                <button class="btn btn-success pull-right" id="updateoffer"><i class="fa fa-save"></i> Save</button>
+                <button class="btn btn-success pull-right" id="updateoffer"><i class="fa fa-save"></i> Update</button>
               </div>
               <!-- /.box-footer -->
           </div>
@@ -163,7 +163,6 @@
             <div class="box-header with-border">
               <h3 class="box-title"></h3>
             </div>
-            <div class="text-center">
               <div class="modal-body">
                 <div class="form-group" hidden="">
                   <label class="col-sm-2 control-label">ID : </label>
@@ -194,10 +193,9 @@
                   </div>
                 </div>
               </div>
-            </div>
             <div class="box-footer">
               <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Cancel</button>
-              <button type="button" class="btn btn-info pull-right" id="deleteoffer">Delete</button>
+              <button type="button" class="btn btn-danger pull-right" id="deleteoffer">Delete</button>
             </div>
             <!-- /.box -->
         </div>
@@ -231,7 +229,7 @@
               "<td><a href='#'>"+data.title+"</a></td>"+
               "<td>"+data.amount+"</td>"+
               "<td>"+data.level+"</td>"+
-              "<td><a href='#' class='edit-modal btn btn-sm btn-warning btn-flat center' data-id='"+data.id+"' data-title='"+data.title+"' data-amount='"+data.amount+"' data-level='"+data.level+"'><i class='fa fa-edit'></i>Edit</a>"+
+              "<td><a href='#' class='edit-modal btn btn-sm btn-warning btn-flat center' data-id='"+data.id+"' data-title='"+data.title+"' data-amount='"+data.amount+"' data-level='"+data.level+"'><i class='fa fa-edit'></i>Edit</a>&nbsp"+
 
                 "<a href='#' class='delete-modal btn btn-sm btn-danger btn-flat center' data-id='"+data.id+"' data-title='"+data.title+"' data-amount='"+data.amount+"' data-level='"+data.level+"'><i class='fa fa-times'></i> Delete</a>"+
               "</td>"+
@@ -273,7 +271,7 @@
               "<td><a href='#'>"+data.title+"</a></td>"+
               "<td>"+data.amount+"</td>"+
               "<td>"+data.level+"</td>"+
-              "<td><a href='#' class='edit-modal btn btn-sm btn-warning btn-flat center' data-id='"+data.id+"' data-title='"+data.title+"' data-amount='"+data.amount+"' data-level='"+data.level+"'><i class='fa fa-edit'></i>Edit</a>"+
+              "<td><a href='#' class='edit-modal btn btn-sm btn-warning btn-flat center' data-id='"+data.id+"' data-title='"+data.title+"' data-amount='"+data.amount+"' data-level='"+data.level+"'><i class='fa fa-edit'></i> Edit</a>&nbsp"+
 
                 "<a href='#' class='delete-modal btn btn-sm btn-danger btn-flat center' data-id='"+data.id+"' data-title='"+data.title+"' data-amount='"+data.amount+"' data-level='"+data.level+"'><i class='fa fa-times'></i> Delete</a>"+
               "</td>"+

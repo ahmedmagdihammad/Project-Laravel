@@ -18,7 +18,9 @@ class HrmanagementController extends Controller
     {
         $employe = Employe::all();
 
-        return response()->json($employe);
+        return response()->json([
+            'data' => $employe,
+        ]);
     }
 
     /**

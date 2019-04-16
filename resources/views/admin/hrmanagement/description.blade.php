@@ -140,7 +140,7 @@
               <!-- /.box-body -->
             <div class="box-footer">
                 <button type="button" class="btn btn-danger pull-right" data-dismiss="modal">Cancel</button>
-                <button id="update" class="btn btn-success pull-right"><i class="fa fa-save"></i> Save</button>
+                <button id="update" class="btn btn-success pull-right"><i class="fa fa-save"></i> Update</button>
               </form>
             </div>
               <!-- /.box-footer -->
@@ -193,8 +193,8 @@
             </div>
               <!-- /.box-body -->
             <div class="box-footer">
-                <button type="button" class="btn btn-danger pull-right" data-dismiss="modal">Cancel</button>
-                <button id="delete" class="btn btn-success pull-right"><i class="fa fa-save"></i> Delete</button>
+                <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Cancel</button>
+                <button id="delete" class="btn btn-danger pull-right"> Delete</button>
               </form>
             </div>
               <!-- /.box-footer -->
@@ -208,7 +208,7 @@
 		// Code Ajax Add
 		$(document).on('click', '.add-modal', function() {
 			$('#modalInsert').modal('show');
-			$('.box-title').text('Add Description');
+			$('.box-title').text('Add Job Title');
 			$('.form-horizontal').show();
 		});
 
@@ -243,7 +243,7 @@
 			$('#upid').val($(this).data('id'));
 			$('#uptitle').val($(this).data('title'));
 			$('#updepartment').val($(this).data('department'));
-			$('.box-title').text('Edit Description');
+			$('.box-title').text('Edit Jobs Title');
 			$('.form-horizontal').show();
 			$('#modalEdit').modal('show');
 		});

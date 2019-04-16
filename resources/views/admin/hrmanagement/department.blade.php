@@ -112,7 +112,7 @@
               <!-- /.box-body -->
             <div class="box-footer">
                 <button type="button" class="btn btn-danger pull-right" data-dismiss="modal">Cancel</button>
-                <button id="update" class="btn btn-success pull-right"><i class="fa fa-save"></i> Save</button>
+                <button id="update" class="btn btn-success pull-right"><i class="fa fa-save"></i> Update</button>
               </form>
             </div>
               <!-- /.box-footer -->
@@ -150,8 +150,8 @@
             </div>
               <!-- /.box-body -->
             <div class="box-footer">
-                <button type="button" class="btn btn-danger pull-right" data-dismiss="modal">Cancel</button>
-                <button id="delete" class="btn btn-success pull-right"><i class="fa fa-save"></i> Delete</button>
+                <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Cancel</button>
+                <button id="delete" class="btn btn-danger pull-right"> Delete</button>
               </form>
             </div>
               <!-- /.box-footer -->
@@ -194,7 +194,7 @@
 		$(document).on('click', '.edit-modal', function() {
 	      $('#upid').val($(this).data('id'));
 	      $('#upname').val($(this).data('name'));
-	      $('.box-title').val('Edit Payment');
+	      $('.box-title').text('Edit Department');
 	      $('.form-horizontal').show();
 	      $('#modalEdit').modal('show');
 	    });

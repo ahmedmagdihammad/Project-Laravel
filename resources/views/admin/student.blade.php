@@ -168,7 +168,7 @@
                 <!-- /.box-body -->
                 <div class="box-footer">
                   <button class="btn btn-danger pull-right" data-dismiss="modal">Cancel</a>
-                  <button type="button" class="btn btn-success pull-right" id="updatestudent">Save</button>
+                  <button type="button" class="btn btn-success pull-right" id="updatestudent"> <i class="fa fa-save"></i> Update</button>
                 </div>
                 <!-- /.box-footer -->
               
@@ -230,7 +230,7 @@
             </div>
             <div class="box-footer">
               <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Cancel</button>
-              <button type="button" class="btn btn-danger pull-right" id="delete">Delete</button>
+              <button type="button" class="btn btn-danger pull-right" id="delete"> Delete</button>
             </div>
             <!-- /.box -->
         </div>
@@ -268,7 +268,7 @@
               "<td id='tbemail'>"+data.email+"</td>"+
               "<td id='tbmobile'>"+data.mobile+"</td>"+
              "<td><div id='tbbranch' class='sparkbar' data-color='#00a65a' data-height='20'>"+data.branchname+"</div></td>"+
-              "<td><a href='#' class='edit-modal btn btn-sm btn-warning btn-flat center' data-id='"+data.id+"' data-fullname='"+data.fullname+"' data-email='"+data.email+"' data-mobile='"+data.mobile+"' data-name='"+data.name+"' data-branch='"+data.branch+"'><i class='fa fa-edit'></i>Edit</a>"+
+              "<td><a href='#' class='edit-modal btn btn-sm btn-warning btn-flat center' data-id='"+data.id+"' data-fullname='"+data.fullname+"' data-email='"+data.email+"' data-mobile='"+data.mobile+"' data-name='"+data.name+"' data-branch='"+data.branch+"'><i class='fa fa-edit'></i>Edit</a>&nbsp"+
                 "<a href='#' class='delete-modal btn btn-sm btn-danger btn-flat center' data-id='"+data.id+"' data-fullname='"+data.fullname+"' data-email='"+data.email+"' data-mobile='"+data.mobile+"' data-name='"+data.name+"' data-branch='"+data.branch+"'><i class='fa fa-times'></i> Delete</a>"+
               "</td>"+
             "</tr>"
@@ -286,6 +286,7 @@
     $('#upemail').val($(this).data('email'));
     $('#upmobile').val($(this).data('mobile'));
     $('#upbranch').val($(this).data('branch'));
+    $('.box-title').text('Edit Student');
     $('.form-horizontal').show();
     $('#modalEdit').modal('show');
   });
@@ -310,7 +311,7 @@
               "<td id='tbemail'>"+data.email+"</td>"+
               "<td id='tbmobile'>"+data.mobile+"</td>"+
              "<td><div id='tbbranch' class='sparkbar' data-color='#00a65a' data-height='20'>"+data.branchname+"</div></td>"+
-              "<td><a href='#' class='edit-modal btn btn-sm btn-warning btn-flat center' data-id='"+data.id+"' data-fullname='"+data.fullname+"' data-email='"+data.email+"' data-mobile='"+data.mobile+"' data-name='"+data.name+"' data-branch='"+data.branch+"'><i class='fa fa-edit'></i>Edit</a>"+
+              "<td><a href='#' class='edit-modal btn btn-sm btn-warning btn-flat center' data-id='"+data.id+"' data-fullname='"+data.fullname+"' data-email='"+data.email+"' data-mobile='"+data.mobile+"' data-name='"+data.name+"' data-branch='"+data.branch+"'><i class='fa fa-edit'></i> Edit</a>&nbsp"+
                 "<a href='#' class='delete-modal btn btn-sm btn-danger btn-flat center' data-id='"+data.id+"' data-fullname='"+data.fullname+"' data-email='"+data.email+"' data-mobile='"+data.mobile+"' data-name='"+data.name+"' data-branch='"+data.branch+"'><i class='fa fa-times'></i> Delete</a>"+
               "</td>"+
             "</tr>"

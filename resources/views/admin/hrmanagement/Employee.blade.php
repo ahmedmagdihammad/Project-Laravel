@@ -245,8 +245,8 @@
             </div>
               <!-- /.box-body -->
             <div class="box-footer">
-                <button type="button" class="btn btn-danger pull-right" data-dismiss="modal">Cancel</button>
-                <button id="delete" class="btn btn-success pull-right"><i class="fa fa-save"></i> Delete </button>
+                <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Cancel</button>
+                <button id="delete" class="btn btn-danger pull-right"> Delete </button>
               </form>
             </div>
               <!-- /.box-footer -->

@@ -26,7 +26,7 @@
           <td>{{$payment->getBranch->name}}</td>
           <td><span>{{$payment->amount}}</span></td>
           <td>
-            <a href="#" class="edit-modal btn btn-sm btn-info btn-flat center" data-id="{{$payment->id}}" data-student="{{$payment->student}}" data-offer="{{$payment->offer}}" data-branch="{{$payment->branch}}" data-amount="{{$payment->amount}}">Edit</a>
+            <a href="#" class="edit-modal btn btn-sm btn-warning btn-flat center" data-id="{{$payment->id}}" data-student="{{$payment->student}}" data-offer="{{$payment->offer}}" data-branch="{{$payment->branch}}" data-amount="{{$payment->amount}}"><i class="fa fa-edit"></i> Edit</a>
           </td>
         </tr>
         @endforeach
@@ -96,7 +96,7 @@
               <!-- /.box-body -->
               <div class="box-footer">
                 <button type="button" class="btn btn-danger pull-right" data-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn btn-success pull-right" id="save">Update</button>
+                <button type="button" class="btn btn btn-success pull-right" id="save"><i class="fa fa-save"></i> Save</button>
                 </form>
                 
               </div>
@@ -119,7 +119,7 @@
             <form class="form-horizontal" >
             {{ csrf_field() }}
               <div class="box-body">
-                <div class="form-group">
+                <div class="form-group" hidden="">
                   <label class="col-sm-2 control-label">ID</label>
 
                   <div class="col-sm-10">
@@ -173,7 +173,7 @@
               <!-- /.box-body -->
               <div class="box-footer">
                 <button type="button" class="btn btn-danger pull-right" data-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn btn-success pull-right" id="update">Update</button>
+                <button type="button" class="btn btn btn-success pull-right" id="update"><i class="fa fa-save"></i> Update</button>
                 </form>
                 
               </div>
@@ -213,7 +213,7 @@
               "<td>"+data.offertitle+"</td>"+
               "<td>"+data.branchname+"</td>"+
               "<td><span>"+data.amount+"</span></td>"+
-              "<td><a href='#' class='edit-modal btn btn-sm btn-info btn-flat center' data-id='"+data.id+"' data-student='"+data.student+"' data-offer='"+data.offer+"' data-branch='"+data.branch+"' data-amount='"+data.amount+"'>Edit</a></td>"+
+              "<td><a href='#' class='edit-modal btn btn-sm btn-warning btn-flat center' data-id='"+data.id+"' data-student='"+data.student+"' data-offer='"+data.offer+"' data-branch='"+data.branch+"' data-amount='"+data.amount+"'><i class='fa fa-edit'></i> Edit</a></td>"+
             "</tr>"
           );
         }
@@ -231,7 +231,7 @@
       $('#upoffer').val($(this).data('offer'));
       $('#upbranch').val($(this).data('branch'));
       $('#upamount').val($(this).data('amount'));
-      $('.box-title').val('Edit Payment');
+      $('.box-title').text('Edit Payment');
       $('.form-horizontal').show();
       $('#modalEdit').modal('show');
     });
@@ -256,11 +256,12 @@
               "<td>"+data.offertitle+"</td>"+
               "<td>"+data.branchname+"</td>"+
               "<td><span>"+data.amount+"</span></td>"+
-              "<td><a href='#' class='edit-modal btn btn-sm btn-info btn-flat center' data-id='"+data.id+"' data-student='"+data.student+"' data-offer='"+data.offer+"' data-branch='"+data.branch+"' data-amount='"+data.amount+"'>Edit</a></td>"+
+              "<td><a href='#' class='edit-modal btn btn-sm btn-warning btn-flat center' data-id='"+data.id+"' data-student='"+data.student+"' data-offer='"+data.offer+"' data-branch='"+data.branch+"' data-amount='"+data.amount+"'><i class='fa fa-edit'></i> Edit</a></td>"+
             "</tr>"
           );
         }
       });
+      $('#modalEdit').modal('hide');
     });
   </script>
 @stop
