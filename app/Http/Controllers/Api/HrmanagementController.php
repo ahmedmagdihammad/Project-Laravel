@@ -19,7 +19,7 @@ class HrmanagementController extends Controller
         $employe = Employe::all();
 
         return response()->json([
-            'data' => $employe,
+            'Employees' => $employe,
         ]);
     }
 

@@ -18,12 +18,16 @@ class StudentController extends Controller
      */
     public function index()
     {
-        $value = DB::table('students')
-            ->join('payments', 'students.id','=','payments.id')
-            ->select('students.*','payments.offer','payments.amount')
-            ->get();
+        // $payment = ;
+        // $student = ;
+        $student = array([
+            'Payments' => Payment::all(),
+            'Students' => Student::all()
+        ]);
 
-        return response()->json($value);
+        return response()->json([
+            'Students' => $student,
+        ]);
     }
 
     /**

@@ -8,4 +8,4 @@ Route::get('students/{student}', 'Api\\StudentController@show');
 Route::put('students/{student}', 'ArticleController@update');
 Route::delete('students/{student}', 'ArticleController@delete');
 
-Route::get('employess', 'Api\\HrmanagementController@index');
+Route::get('employees', 'Api\\HrmanagementController@index');

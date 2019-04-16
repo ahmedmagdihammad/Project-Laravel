@@ -252,7 +252,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
-        <li class="active treeview">
+        <li class="active"><a href="{{route('home.student')}}"><i class="fa fa-users"></i> <span>Student</span></a></li>
+        <li><a href="{{route('home.branch')}}"><i class="fa fa-arrows-alt"></i> <span>Branch</span></a></li>
+        <li><a href="{{route('home.offer')}}"><i class="fa fa-usd"></i> <span>Offer</span></a></li>
+        <li><a href="{{route('home.payment')}}"><i class="fa fa-money"></i> <span>Payment</span></a></li>
+        <li class="treeview">
           <a href="#">
             <i class="fa fa-laptop"></i>
             <span>HR Management</span>
@@ -266,22 +270,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <li><a href="{{route('home.Employees')}}"><i class="fa fa-circle-o"></i> Employees</a></li>
           </ul>
         </li>
-        <li><a href="{{route('home.branch')}}"><i class="fa fa-arrows-alt"></i> <span>Branch</span></a></li>
-        <li><a href="{{route('home.student')}}"><i class="fa fa-users"></i> <span>Student</span></a></li>
-        <li><a href="{{route('home.offer')}}"><i class="fa fa-usd"></i> <span>Offer</span></a></li>
-        <li><a href="{{route('home.payment')}}"><i class="fa fa-money"></i> <span>Payment</span></a></li>
     </section>
     <!-- /.sidebar -->
   </aside>
-
-
-
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    
-
-    
 
     <!-- Main content -->
     
